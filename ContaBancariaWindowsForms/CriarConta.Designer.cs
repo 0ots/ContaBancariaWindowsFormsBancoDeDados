@@ -46,6 +46,9 @@
             this.lblErroEmailCriarContaBancaria = new System.Windows.Forms.Label();
             this.lblErroTelefoneCriarContaBancaria = new System.Windows.Forms.Label();
             this.lblErroCpfCriarContaBancaria = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblSenhaCriarContaBancaria = new System.Windows.Forms.Label();
+            this.txtSenhaCriarContaBancaria = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +76,7 @@
             this.btnCriarConta.BackColor = System.Drawing.Color.White;
             this.btnCriarConta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCriarConta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCriarConta.Location = new System.Drawing.Point(305, 373);
+            this.btnCriarConta.Location = new System.Drawing.Point(305, 386);
             this.btnCriarConta.Name = "btnCriarConta";
             this.btnCriarConta.Size = new System.Drawing.Size(59, 45);
             this.btnCriarConta.TabIndex = 4;
@@ -86,7 +89,7 @@
             this.btnLimparCamposContaBancaria.BackColor = System.Drawing.Color.White;
             this.btnLimparCamposContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimparCamposContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLimparCamposContaBancaria.Location = new System.Drawing.Point(380, 373);
+            this.btnLimparCamposContaBancaria.Location = new System.Drawing.Point(380, 386);
             this.btnLimparCamposContaBancaria.Name = "btnLimparCamposContaBancaria";
             this.btnLimparCamposContaBancaria.Size = new System.Drawing.Size(59, 45);
             this.btnLimparCamposContaBancaria.TabIndex = 5;
@@ -97,7 +100,7 @@
             // lblTituloCriarContaBancaria
             // 
             this.lblTituloCriarContaBancaria.AutoSize = true;
-            this.lblTituloCriarContaBancaria.Location = new System.Drawing.Point(302, 125);
+            this.lblTituloCriarContaBancaria.Location = new System.Drawing.Point(302, 126);
             this.lblTituloCriarContaBancaria.Name = "lblTituloCriarContaBancaria";
             this.lblTituloCriarContaBancaria.Size = new System.Drawing.Size(209, 13);
             this.lblTituloCriarContaBancaria.TabIndex = 6;
@@ -106,7 +109,7 @@
             // lblEmailCriarContaBancaria
             // 
             this.lblEmailCriarContaBancaria.AutoSize = true;
-            this.lblEmailCriarContaBancaria.Location = new System.Drawing.Point(384, 207);
+            this.lblEmailCriarContaBancaria.Location = new System.Drawing.Point(384, 237);
             this.lblEmailCriarContaBancaria.Name = "lblEmailCriarContaBancaria";
             this.lblEmailCriarContaBancaria.Size = new System.Drawing.Size(35, 13);
             this.lblEmailCriarContaBancaria.TabIndex = 8;
@@ -116,7 +119,7 @@
             // 
             this.txtEmailCriarContaBancaria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmailCriarContaBancaria.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.txtEmailCriarContaBancaria.Location = new System.Drawing.Point(305, 223);
+            this.txtEmailCriarContaBancaria.Location = new System.Drawing.Point(305, 253);
             this.txtEmailCriarContaBancaria.Name = "txtEmailCriarContaBancaria";
             this.txtEmailCriarContaBancaria.Size = new System.Drawing.Size(206, 20);
             this.txtEmailCriarContaBancaria.TabIndex = 7;
@@ -124,7 +127,7 @@
             // lblTelefoneCriarContaBancaria
             // 
             this.lblTelefoneCriarContaBancaria.AutoSize = true;
-            this.lblTelefoneCriarContaBancaria.Location = new System.Drawing.Point(377, 259);
+            this.lblTelefoneCriarContaBancaria.Location = new System.Drawing.Point(377, 280);
             this.lblTelefoneCriarContaBancaria.Name = "lblTelefoneCriarContaBancaria";
             this.lblTelefoneCriarContaBancaria.Size = new System.Drawing.Size(49, 13);
             this.lblTelefoneCriarContaBancaria.TabIndex = 10;
@@ -135,7 +138,7 @@
             this.txtTelefoneCriarContaBancaria.AccessibleDescription = "";
             this.txtTelefoneCriarContaBancaria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTelefoneCriarContaBancaria.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.txtTelefoneCriarContaBancaria.Location = new System.Drawing.Point(305, 280);
+            this.txtTelefoneCriarContaBancaria.Location = new System.Drawing.Point(305, 301);
             this.txtTelefoneCriarContaBancaria.MaxLength = 11;
             this.txtTelefoneCriarContaBancaria.Name = "txtTelefoneCriarContaBancaria";
             this.txtTelefoneCriarContaBancaria.Size = new System.Drawing.Size(206, 20);
@@ -145,7 +148,7 @@
             // lblCpfCriarContaBancaria
             // 
             this.lblCpfCriarContaBancaria.AutoSize = true;
-            this.lblCpfCriarContaBancaria.Location = new System.Drawing.Point(389, 308);
+            this.lblCpfCriarContaBancaria.Location = new System.Drawing.Point(389, 330);
             this.lblCpfCriarContaBancaria.Name = "lblCpfCriarContaBancaria";
             this.lblCpfCriarContaBancaria.Size = new System.Drawing.Size(27, 13);
             this.lblCpfCriarContaBancaria.TabIndex = 14;
@@ -155,7 +158,7 @@
             // 
             this.txtCpfCriarContaBancaria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCpfCriarContaBancaria.CausesValidation = false;
-            this.txtCpfCriarContaBancaria.Location = new System.Drawing.Point(305, 328);
+            this.txtCpfCriarContaBancaria.Location = new System.Drawing.Point(305, 350);
             this.txtCpfCriarContaBancaria.MaxLength = 11;
             this.txtCpfCriarContaBancaria.Name = "txtCpfCriarContaBancaria";
             this.txtCpfCriarContaBancaria.Size = new System.Drawing.Size(206, 20);
@@ -166,7 +169,7 @@
             this.btnVoltarTelaInicialCriarContaBancaria.BackColor = System.Drawing.Color.White;
             this.btnVoltarTelaInicialCriarContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltarTelaInicialCriarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVoltarTelaInicialCriarContaBancaria.Location = new System.Drawing.Point(452, 373);
+            this.btnVoltarTelaInicialCriarContaBancaria.Location = new System.Drawing.Point(452, 386);
             this.btnVoltarTelaInicialCriarContaBancaria.Name = "btnVoltarTelaInicialCriarContaBancaria";
             this.btnVoltarTelaInicialCriarContaBancaria.Size = new System.Drawing.Size(59, 45);
             this.btnVoltarTelaInicialCriarContaBancaria.TabIndex = 16;
@@ -177,7 +180,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(346, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(350, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(117, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -195,7 +198,7 @@
             // lblErroEmailCriarContaBancaria
             // 
             this.lblErroEmailCriarContaBancaria.AutoSize = true;
-            this.lblErroEmailCriarContaBancaria.Location = new System.Drawing.Point(534, 226);
+            this.lblErroEmailCriarContaBancaria.Location = new System.Drawing.Point(534, 256);
             this.lblErroEmailCriarContaBancaria.Name = "lblErroEmailCriarContaBancaria";
             this.lblErroEmailCriarContaBancaria.Size = new System.Drawing.Size(0, 13);
             this.lblErroEmailCriarContaBancaria.TabIndex = 19;
@@ -203,7 +206,7 @@
             // lblErroTelefoneCriarContaBancaria
             // 
             this.lblErroTelefoneCriarContaBancaria.AutoSize = true;
-            this.lblErroTelefoneCriarContaBancaria.Location = new System.Drawing.Point(534, 283);
+            this.lblErroTelefoneCriarContaBancaria.Location = new System.Drawing.Point(534, 304);
             this.lblErroTelefoneCriarContaBancaria.Name = "lblErroTelefoneCriarContaBancaria";
             this.lblErroTelefoneCriarContaBancaria.Size = new System.Drawing.Size(0, 13);
             this.lblErroTelefoneCriarContaBancaria.TabIndex = 20;
@@ -211,16 +214,47 @@
             // lblErroCpfCriarContaBancaria
             // 
             this.lblErroCpfCriarContaBancaria.AutoSize = true;
-            this.lblErroCpfCriarContaBancaria.Location = new System.Drawing.Point(534, 331);
+            this.lblErroCpfCriarContaBancaria.Location = new System.Drawing.Point(534, 353);
             this.lblErroCpfCriarContaBancaria.Name = "lblErroCpfCriarContaBancaria";
             this.lblErroCpfCriarContaBancaria.Size = new System.Drawing.Size(0, 13);
             this.lblErroCpfCriarContaBancaria.TabIndex = 21;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(534, 214);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 24;
+            // 
+            // lblSenhaCriarContaBancaria
+            // 
+            this.lblSenhaCriarContaBancaria.AutoSize = true;
+            this.lblSenhaCriarContaBancaria.Location = new System.Drawing.Point(383, 195);
+            this.lblSenhaCriarContaBancaria.Name = "lblSenhaCriarContaBancaria";
+            this.lblSenhaCriarContaBancaria.Size = new System.Drawing.Size(38, 13);
+            this.lblSenhaCriarContaBancaria.TabIndex = 23;
+            this.lblSenhaCriarContaBancaria.Text = "Senha";
+            // 
+            // txtSenhaCriarContaBancaria
+            // 
+            this.txtSenhaCriarContaBancaria.AccessibleDescription = "";
+            this.txtSenhaCriarContaBancaria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSenhaCriarContaBancaria.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.txtSenhaCriarContaBancaria.Location = new System.Drawing.Point(305, 211);
+            this.txtSenhaCriarContaBancaria.Name = "txtSenhaCriarContaBancaria";
+            this.txtSenhaCriarContaBancaria.Size = new System.Drawing.Size(206, 20);
+            this.txtSenhaCriarContaBancaria.TabIndex = 22;
+            this.txtSenhaCriarContaBancaria.UseSystemPasswordChar = true;
             // 
             // frmCriarConta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblSenhaCriarContaBancaria);
+            this.Controls.Add(this.txtSenhaCriarContaBancaria);
             this.Controls.Add(this.lblErroCpfCriarContaBancaria);
             this.Controls.Add(this.lblErroTelefoneCriarContaBancaria);
             this.Controls.Add(this.lblErroEmailCriarContaBancaria);
@@ -242,7 +276,6 @@
             this.Name = "frmCriarConta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Banco Oots";
-            this.Load += new System.EventHandler(this.frmCriarConta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -267,5 +300,8 @@
         private System.Windows.Forms.Label lblErroEmailCriarContaBancaria;
         private System.Windows.Forms.Label lblErroTelefoneCriarContaBancaria;
         private System.Windows.Forms.Label lblErroCpfCriarContaBancaria;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSenhaCriarContaBancaria;
+        private System.Windows.Forms.TextBox txtSenhaCriarContaBancaria;
     }
 }

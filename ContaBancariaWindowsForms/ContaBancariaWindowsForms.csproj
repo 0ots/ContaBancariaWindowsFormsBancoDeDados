@@ -104,6 +104,12 @@
     <Compile Include="CriarConta.Designer.cs">
       <DependentUpon>CriarConta.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaEditarDadosTitular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaEditarDadosTitular.Designer.cs">
+      <DependentUpon>TelaEditarDadosTitular.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,12 @@
     </Compile>
     <Compile Include="TelaInicialContaTitular.Designer.cs">
       <DependentUpon>TelaInicialContaTitular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaLogin.Designer.cs">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaRealizarDeposito.cs">
       <SubType>Form</SubType>
@@ -134,6 +146,9 @@
     <EmbeddedResource Include="CriarConta.resx">
       <DependentUpon>CriarConta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TelaEditarDadosTitular.resx">
+      <DependentUpon>TelaEditarDadosTitular.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +163,9 @@
     </Compile>
     <EmbeddedResource Include="TelaInicialContaTitular.resx">
       <DependentUpon>TelaInicialContaTitular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaLogin.resx">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaRealizarDeposito.resx">
       <DependentUpon>TelaRealizarDeposito.cs</DependentUpon>

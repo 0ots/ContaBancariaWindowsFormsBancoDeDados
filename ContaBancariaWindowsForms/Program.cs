@@ -18,13 +18,5 @@ namespace ContaBancariaWindowsForms
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmTelaInicial());
         }
-        public static void IntNumber(KeyPressEventArgs e)
-        {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8) { }
-            {
-                e.Handled = true;
-            }
-        }
-
     }
 }

@@ -40,7 +40,7 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(318, 215);
+            this.lblTitulo.Location = new System.Drawing.Point(334, 222);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(143, 13);
             this.lblTitulo.TabIndex = 0;
@@ -49,7 +49,7 @@
             // lblSubTitulo
             // 
             this.lblSubTitulo.AutoSize = true;
-            this.lblSubTitulo.Location = new System.Drawing.Point(304, 238);
+            this.lblSubTitulo.Location = new System.Drawing.Point(317, 239);
             this.lblSubTitulo.Name = "lblSubTitulo";
             this.lblSubTitulo.Size = new System.Drawing.Size(169, 13);
             this.lblSubTitulo.TabIndex = 2;
@@ -60,7 +60,7 @@
             this.btnCriarContaContaBancaria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCriarContaContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCriarContaContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCriarContaContaBancaria.Location = new System.Drawing.Point(389, 264);
+            this.btnCriarContaContaBancaria.Location = new System.Drawing.Point(402, 264);
             this.btnCriarContaContaBancaria.Name = "btnCriarContaContaBancaria";
             this.btnCriarContaContaBancaria.Size = new System.Drawing.Size(75, 48);
             this.btnCriarContaContaBancaria.TabIndex = 3;
@@ -71,7 +71,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(332, 97);
+            this.pictureBox1.Location = new System.Drawing.Point(346, 97);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(117, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -83,7 +83,7 @@
             this.btnAcessarContaContaBancaria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAcessarContaContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAcessarContaContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAcessarContaContaBancaria.Location = new System.Drawing.Point(312, 264);
+            this.btnAcessarContaContaBancaria.Location = new System.Drawing.Point(325, 264);
             this.btnAcessarContaContaBancaria.Name = "btnAcessarContaContaBancaria";
             this.btnAcessarContaContaBancaria.Size = new System.Drawing.Size(75, 48);
             this.btnAcessarContaContaBancaria.TabIndex = 17;

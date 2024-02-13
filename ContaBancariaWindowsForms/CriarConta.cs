@@ -26,19 +26,16 @@ namespace ContaBancariaWindowsForms
         {
             VoltarTelaInicial();
         }
-        private void frmCriarConta_Load(object sender, EventArgs e)
-        {
-
-        }
         private void btnCriarConta_Click(object sender, EventArgs e)
         {
             LimparCamposErros();
+            List<Titular> titular = new List<Titular>();
             var nome = txtNomeCriarContaBancaria.Text;
+            var senha = txtSenhaCriarContaBancaria.Text;
             var email = txtEmailCriarContaBancaria.Text;
             var telefone = txtTelefoneCriarContaBancaria.Text;
             var cpf = txtCpfCriarContaBancaria.Text;
-            Titular titular = new Titular(nome, email, telefone, cpf);
-
+            titular.Add(new Titular(nome, senha, email, telefone, cpf));
             int erro = 0;
             bool isInteger = false;
             while (!isInteger)
@@ -63,15 +60,19 @@ namespace ContaBancariaWindowsForms
                 try
                 {
                     MySqlConnection Conexao = new MySqlConnection("datasource=localhost;username=root;password=;database=contabancaria");
-                    string sql_code = titular.InserirTitular();
-                    MySqlCommand comando = new MySqlCommand(sql_code, Conexao);
-                    Conexao.Open();
-                    comando.ExecuteReader();
-                    MessageBox.Show("Titular inserido com sucesso!");
-                    LimparCamposCriarContaBancaria();
-                    LimparCamposErros();
+                    foreach (Titular t in titular)
+                    {
+                        // Invoca o método MeuMetodo para cada objeto Titular na lista
+                        string sql_code = t.InserirTitular();
+                        MySqlCommand comando = new MySqlCommand(sql_code, Conexao);
+                        Conexao.Open();
+                        comando.ExecuteReader();
+                        MessageBox.Show("Titular inserido com sucesso!");
+                        LimparCamposCriarContaBancaria();
+                        LimparCamposErros();
+                    }
                 }
-                catch (Exception ex)
+                catch
                 {
                     MessageBox.Show("Houve um erro ao cadastrar o titular");
                 }
@@ -87,6 +88,7 @@ namespace ContaBancariaWindowsForms
         private void LimparCamposCriarContaBancaria()
         {
             txtNomeCriarContaBancaria.Text = "";
+            txtSenhaCriarContaBancaria.Text = "";
             txtEmailCriarContaBancaria.Text = "";
             txtTelefoneCriarContaBancaria.Text = "";
             txtCpfCriarContaBancaria.Text = "";
@@ -94,6 +96,7 @@ namespace ContaBancariaWindowsForms
         public void LimparCamposErros()
         {
             lblErroNomeCriarContaBancaria.Text = "";
+           
             lblErroEmailCriarContaBancaria.Text = "";
             lblErroTelefoneCriarContaBancaria.Text = "";
             lblErroCpfCriarContaBancaria.Text = "";

@@ -20,26 +20,27 @@ namespace ContaBancariaWindowsForms
         {
 
         }
-        private void btnCriarContaContaBancaria_Click(object sender, EventArgs e)
-        {
-            AcessarTelaCriarConta();
-        }
         private void btnAcessarContaContaBancaria_Click(object sender, EventArgs e)
         {
-            AcessarTelaInicialContaTitular();
+            AcessarTelaLoginContaBancaria();
+        }
+        private void btnCriarContaContaBancaria_Click(object sender, EventArgs e)
+        {
+            AcessarTelaCriarContaBancaria();
         }
         // Método para acessar a tela de criar conta
-        public void AcessarTelaCriarConta()
+        public void AcessarTelaCriarContaBancaria()
         {
             frmCriarConta telacriarconta = new frmCriarConta();
             this.Hide();
             telacriarconta.Show();
         }
         // Método para acessar a tela inicial da conta do titular
-        public void AcessarTelaInicialContaTitular()
+        public void AcessarTelaLoginContaBancaria()
         {
-            frmTelaInicialContaTitular frmtelainicialcontatitular = new frmTelaInicialContaTitular();
-            frmtelainicialcontatitular.Show();
+            frmTelaLogin frmtelalogin = new frmTelaLogin();
+            frmtelalogin.Show();
+            this.Hide();
         }
     }
 }

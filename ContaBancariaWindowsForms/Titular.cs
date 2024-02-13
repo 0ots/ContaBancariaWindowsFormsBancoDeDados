@@ -10,6 +10,7 @@ namespace ContaBancariaWindowsForms
     {
         // Atributos
         private string _nome;
+        private string _senha;
         private string _email;
         private string _telefone;
         private string _cpf;
@@ -24,6 +25,17 @@ namespace ContaBancariaWindowsForms
             set
             {
                 _nome = value;
+            }
+        }
+        public string Senha
+        {
+            get
+            {
+                return _senha;
+            }
+            set
+            {
+                _senha = value;
             }
         }
         public string Email
@@ -70,54 +82,67 @@ namespace ContaBancariaWindowsForms
                 _saldo = value;
             }
         }
-        // Construtor
-        public Titular(string nome, string email, string telefone, string cpf)
+        // Construtor da classe
+        public Titular(string nome, string senha, string email, string telefone, string cpf)
         {
             Nome = nome;
+            Senha = senha;
             Email = email;
             Telefone = telefone;
             _cpf = cpf;
             Saldo = 0.00;
         }
-        // Método para realizar cadastrar um titular no banco de dados
+        // Método para retornar a string de inserção do titular
         public string InserirTitular()
         {
-            return $"INSERT INTO titular(nome, email, telefone, cpf, saldo) VALUES('{Nome}', '{Email}', '{Telefone}', '{_cpf}', '{Saldo}')";
+            return $"INSERT INTO titular(nome, senha, email, telefone, cpf, saldo) VALUES('{Nome}', '{Senha}','{Email}', '{Telefone}', '{Cpf}', '{Saldo}')";
         }
-        // Método para alterar dados do titular
-        public string AlterarTitular()
+        // Método para retornar a string atualização dos dados do titular
+        public string AlterarDadosTitular()
         {
             return $"UPDATE titular SET nome = '{Nome}', email = '{Email}', telefone = '{Telefone}'";
         }
-        // Método para deletar um funcionário específico
+        // Método para retornar a string de atualização de senha do titular
+        public string AlterarSenhaTitular()
+        {
+            return $"UPDATE titular SET senha = '{Senha}'";
+        }
+        // Método para retornar a string de deleção do titular
         public string DeletarTitular()
         {
             return $"DELETE FROM usuario where id = ''";
         }
-        // Método para retornar todos os dados de um titulare específico
-        public string RetornarDadosFuncionario()
+        // Método para retornar a string de consulta do saldo do titular
+        public string RetornarSaldoTitular()
+        {
+            return "SELECT saldo FROM titular where id = ''";
+        }
+        // Método para retornar a string de consulta dos dados de um titular específico a partir de seu id
+        public string RetornarDadosTitularEspecifico()
         {
             return "SELECT nome, email, telefone, saldo FROM usuario where id = ''";
         }
-        //  Método para retornar todos os dados de todos os titulares
-        public string RetornarDadosFuncionarios()
+        // Método para retornar a string de consulta dos dados de todos os titulares
+        public string RetornarDadosTodosTitulares()
         {
             return $"SELECT nome, email, telefone, saldo FROM usuario";
         }
-        //
+        // Méotodo para retornar a string de consulta do saldo de um titular específico a partir de seu id
         public string RetornarSaldoFuncionario()
         {
             return $"SELECT valor FROM titular where id = ''";
         }
         // Método para realizar um depósito recebendo um valor como parâmetro
-        public void RealizarDeposito(double valor)
+        public string RealizarDeposito(double valor)
         {
             Saldo += valor;
+            return $"UPDATE titular SET saldo = '{valor}' where id = ''";
         }
         // Método para realizar um saque recebendo um valor como parâmetro
-        public void RealizarSaque(double valor)
+        public string RealizarSaque(double valor)
         {
             Saldo -= valor;
+            return $"UPDATE titular SET saldo = '{valor}' where id = ''";
         }
     }
 }
