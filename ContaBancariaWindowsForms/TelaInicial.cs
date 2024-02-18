@@ -31,7 +31,7 @@ namespace ContaBancariaWindowsForms
         // Método para acessar a tela de criar conta
         public void AcessarTelaCriarContaBancaria()
         {
-            frmCriarConta telacriarconta = new frmCriarConta();
+            frmTelaCriarConta telacriarconta = new frmTelaCriarConta();
             this.Hide();
             telacriarconta.Show();
         }

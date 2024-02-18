@@ -29,17 +29,16 @@ namespace ContaBancariaWindowsForms
         }
         private void btnRealizarDepositoTelaInicialContaBancaria_Click(object sender, EventArgs e)
         {
-            frmTelaRealizarDeposito frmtelarealizardepostio = new frmTelaRealizarDeposito();
+            frmTelaRealizarDeposito frmtelarealizardepostio = new frmTelaRealizarDeposito(userID);
             frmtelarealizardepostio.Show();
             this.Hide();
         }
         private void btnRealizarSaqueTelaInicialContaBancaria_Click(object sender, EventArgs e)
         {
-            frmTelaRealizarSaque frmtelarealizarsaque = new frmTelaRealizarSaque();
+            frmTelaRealizarSaque frmtelarealizarsaque = new frmTelaRealizarSaque(userID);
             frmtelarealizarsaque.Show();
             this.Hide();
         }
-
         private void frmTelaInicialContaTitular_Load(object sender, EventArgs e)
         {
             MySqlConnection Conexao = new MySqlConnection("datasource=localhost;username=root;password=;database=contabancaria");

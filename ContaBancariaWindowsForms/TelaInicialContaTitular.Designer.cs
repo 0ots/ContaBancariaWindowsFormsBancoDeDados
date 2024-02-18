@@ -45,17 +45,17 @@
             // 
             this.lblRetornarNomeTitularTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.lblRetornarNomeTitularTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lblRetornarNomeTitularTelaInicialContaBancaria.Location = new System.Drawing.Point(372, 132);
+            this.lblRetornarNomeTitularTelaInicialContaBancaria.Location = new System.Drawing.Point(265, 199);
             this.lblRetornarNomeTitularTelaInicialContaBancaria.Name = "lblRetornarNomeTitularTelaInicialContaBancaria";
-            this.lblRetornarNomeTitularTelaInicialContaBancaria.Size = new System.Drawing.Size(69, 13);
+            this.lblRetornarNomeTitularTelaInicialContaBancaria.Size = new System.Drawing.Size(274, 22);
             this.lblRetornarNomeTitularTelaInicialContaBancaria.TabIndex = 0;
-            this.lblRetornarNomeTitularTelaInicialContaBancaria.Text = "Nome cliente";
+            this.lblRetornarNomeTitularTelaInicialContaBancaria.Text = "N";
             this.lblRetornarNomeTitularTelaInicialContaBancaria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMensagemTelaInicialContaBancaria
             // 
             this.lblMensagemTelaInicialContaBancaria.AutoSize = true;
-            this.lblMensagemTelaInicialContaBancaria.Location = new System.Drawing.Point(338, 154);
+            this.lblMensagemTelaInicialContaBancaria.Location = new System.Drawing.Point(329, 221);
             this.lblMensagemTelaInicialContaBancaria.Name = "lblMensagemTelaInicialContaBancaria";
             this.lblMensagemTelaInicialContaBancaria.Size = new System.Drawing.Size(149, 13);
             this.lblMensagemTelaInicialContaBancaria.TabIndex = 1;
@@ -64,7 +64,7 @@
             // lblRetornarSaldoTelaInicialContaBancaria
             // 
             this.lblRetornarSaldoTelaInicialContaBancaria.AutoSize = true;
-            this.lblRetornarSaldoTelaInicialContaBancaria.Location = new System.Drawing.Point(407, 178);
+            this.lblRetornarSaldoTelaInicialContaBancaria.Location = new System.Drawing.Point(402, 247);
             this.lblRetornarSaldoTelaInicialContaBancaria.Name = "lblRetornarSaldoTelaInicialContaBancaria";
             this.lblRetornarSaldoTelaInicialContaBancaria.Size = new System.Drawing.Size(13, 13);
             this.lblRetornarSaldoTelaInicialContaBancaria.TabIndex = 2;
@@ -75,7 +75,7 @@
             this.btnRealizarDepositoTelaInicialContaBancaria.BackColor = System.Drawing.Color.GreenYellow;
             this.btnRealizarDepositoTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRealizarDepositoTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRealizarDepositoTelaInicialContaBancaria.Location = new System.Drawing.Point(286, 253);
+            this.btnRealizarDepositoTelaInicialContaBancaria.Location = new System.Drawing.Point(284, 278);
             this.btnRealizarDepositoTelaInicialContaBancaria.Name = "btnRealizarDepositoTelaInicialContaBancaria";
             this.btnRealizarDepositoTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
             this.btnRealizarDepositoTelaInicialContaBancaria.TabIndex = 4;
@@ -88,7 +88,7 @@
             this.btnRealizarSaqueTelaInicialContaBancaria.BackColor = System.Drawing.Color.DarkOrange;
             this.btnRealizarSaqueTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRealizarSaqueTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRealizarSaqueTelaInicialContaBancaria.Location = new System.Drawing.Point(367, 253);
+            this.btnRealizarSaqueTelaInicialContaBancaria.Location = new System.Drawing.Point(365, 278);
             this.btnRealizarSaqueTelaInicialContaBancaria.Name = "btnRealizarSaqueTelaInicialContaBancaria";
             this.btnRealizarSaqueTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
             this.btnRealizarSaqueTelaInicialContaBancaria.TabIndex = 5;
@@ -101,7 +101,7 @@
             this.btnEncerrarSecaoTelaInicialContaBancaria.BackColor = System.Drawing.Color.IndianRed;
             this.btnEncerrarSecaoTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEncerrarSecaoTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEncerrarSecaoTelaInicialContaBancaria.Location = new System.Drawing.Point(448, 253);
+            this.btnEncerrarSecaoTelaInicialContaBancaria.Location = new System.Drawing.Point(446, 278);
             this.btnEncerrarSecaoTelaInicialContaBancaria.Name = "btnEncerrarSecaoTelaInicialContaBancaria";
             this.btnEncerrarSecaoTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
             this.btnEncerrarSecaoTelaInicialContaBancaria.TabIndex = 6;
@@ -112,7 +112,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(350, 19);
+            this.pictureBox1.Location = new System.Drawing.Point(342, 86);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(117, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -122,7 +122,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(386, 178);
+            this.label1.Location = new System.Drawing.Point(381, 247);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 13);
             this.label1.TabIndex = 19;
@@ -155,6 +155,7 @@
             this.Controls.Add(this.lblMensagemTelaInicialContaBancaria);
             this.Controls.Add(this.lblRetornarNomeTitularTelaInicialContaBancaria);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTelaInicialContaTitular";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Banco Oots";

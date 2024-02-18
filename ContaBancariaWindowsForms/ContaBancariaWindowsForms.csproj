@@ -98,11 +98,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CriarConta.cs">
+    <Compile Include="TelaCriarConta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CriarConta.Designer.cs">
-      <DependentUpon>CriarConta.cs</DependentUpon>
+    <Compile Include="TelaCriarConta.Designer.cs">
+      <DependentUpon>TelaCriarConta.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaEditarDadosTitular.cs">
       <SubType>Form</SubType>
@@ -143,8 +143,8 @@
       <DependentUpon>TelaRealizarSaque.cs</DependentUpon>
     </Compile>
     <Compile Include="Titular.cs" />
-    <EmbeddedResource Include="CriarConta.resx">
-      <DependentUpon>CriarConta.cs</DependentUpon>
+    <EmbeddedResource Include="TelaCriarConta.resx">
+      <DependentUpon>TelaCriarConta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaEditarDadosTitular.resx">
       <DependentUpon>TelaEditarDadosTitular.cs</DependentUpon>

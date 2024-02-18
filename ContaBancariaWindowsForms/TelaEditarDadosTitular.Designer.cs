@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaEditarDadosTitular));
             this.label1 = new System.Windows.Forms.Label();
             this.lblSenhaCriarContaBancaria = new System.Windows.Forms.Label();
             this.txtSenhaCriarContaBancaria = new System.Windows.Forms.TextBox();
@@ -212,6 +213,7 @@
             this.Controls.Add(this.lblErroNomeCriarContaBancaria);
             this.Controls.Add(this.lblNomeCriarContaBancaria);
             this.Controls.Add(this.txtNomeCriarContaBancaria);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaEditarDadosTitular";
             this.Text = "Banco Oots";
             this.ResumeLayout(false);

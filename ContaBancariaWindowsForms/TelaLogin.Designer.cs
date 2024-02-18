@@ -36,7 +36,7 @@
             this.txtSenhaAcessarContaBancaria = new System.Windows.Forms.TextBox();
             this.lblTituloCriarContaBancaria = new System.Windows.Forms.Label();
             this.lblEmailAcessarContaBancaria = new System.Windows.Forms.Label();
-            this.txtCpflAcessarContaBancaria = new System.Windows.Forms.TextBox();
+            this.txtCpfAcessarContaBancaria = new System.Windows.Forms.TextBox();
             this.btnVoltarTelaInicialAcessarContaBancaria = new System.Windows.Forms.Button();
             this.btnLimparCamposAcessarContaBancaria = new System.Windows.Forms.Button();
             this.btnAcessarContaBancaria = new System.Windows.Forms.Button();
@@ -47,7 +47,7 @@
             // lblErroSenhaAcessarContaBancaria
             // 
             this.lblErroSenhaAcessarContaBancaria.AutoSize = true;
-            this.lblErroSenhaAcessarContaBancaria.Location = new System.Drawing.Point(504, 226);
+            this.lblErroSenhaAcessarContaBancaria.Location = new System.Drawing.Point(504, 283);
             this.lblErroSenhaAcessarContaBancaria.Name = "lblErroSenhaAcessarContaBancaria";
             this.lblErroSenhaAcessarContaBancaria.Size = new System.Drawing.Size(26, 13);
             this.lblErroSenhaAcessarContaBancaria.TabIndex = 27;
@@ -57,7 +57,7 @@
             // lblCpfSenhaAcessarContaBancaria
             // 
             this.lblCpfSenhaAcessarContaBancaria.AutoSize = true;
-            this.lblCpfSenhaAcessarContaBancaria.Location = new System.Drawing.Point(504, 173);
+            this.lblCpfSenhaAcessarContaBancaria.Location = new System.Drawing.Point(504, 230);
             this.lblCpfSenhaAcessarContaBancaria.Name = "lblCpfSenhaAcessarContaBancaria";
             this.lblCpfSenhaAcessarContaBancaria.Size = new System.Drawing.Size(26, 13);
             this.lblCpfSenhaAcessarContaBancaria.TabIndex = 26;
@@ -67,7 +67,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(332, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(332, 69);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(117, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -77,7 +77,7 @@
             // lblCPFAcessarContaBancaria
             // 
             this.lblCPFAcessarContaBancaria.AutoSize = true;
-            this.lblCPFAcessarContaBancaria.Location = new System.Drawing.Point(366, 207);
+            this.lblCPFAcessarContaBancaria.Location = new System.Drawing.Point(366, 264);
             this.lblCPFAcessarContaBancaria.Name = "lblCPFAcessarContaBancaria";
             this.lblCPFAcessarContaBancaria.Size = new System.Drawing.Size(38, 13);
             this.lblCPFAcessarContaBancaria.TabIndex = 24;
@@ -87,7 +87,7 @@
             // 
             this.txtSenhaAcessarContaBancaria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSenhaAcessarContaBancaria.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.txtSenhaAcessarContaBancaria.Location = new System.Drawing.Point(287, 223);
+            this.txtSenhaAcessarContaBancaria.Location = new System.Drawing.Point(287, 280);
             this.txtSenhaAcessarContaBancaria.Name = "txtSenhaAcessarContaBancaria";
             this.txtSenhaAcessarContaBancaria.Size = new System.Drawing.Size(206, 20);
             this.txtSenhaAcessarContaBancaria.TabIndex = 23;
@@ -95,7 +95,7 @@
             // lblTituloCriarContaBancaria
             // 
             this.lblTituloCriarContaBancaria.AutoSize = true;
-            this.lblTituloCriarContaBancaria.Location = new System.Drawing.Point(296, 125);
+            this.lblTituloCriarContaBancaria.Location = new System.Drawing.Point(296, 182);
             this.lblTituloCriarContaBancaria.Name = "lblTituloCriarContaBancaria";
             this.lblTituloCriarContaBancaria.Size = new System.Drawing.Size(192, 13);
             this.lblTituloCriarContaBancaria.TabIndex = 22;
@@ -104,22 +104,22 @@
             // lblEmailAcessarContaBancaria
             // 
             this.lblEmailAcessarContaBancaria.AutoSize = true;
-            this.lblEmailAcessarContaBancaria.Location = new System.Drawing.Point(372, 154);
+            this.lblEmailAcessarContaBancaria.Location = new System.Drawing.Point(372, 211);
             this.lblEmailAcessarContaBancaria.Name = "lblEmailAcessarContaBancaria";
             this.lblEmailAcessarContaBancaria.Size = new System.Drawing.Size(27, 13);
             this.lblEmailAcessarContaBancaria.TabIndex = 21;
             this.lblEmailAcessarContaBancaria.Text = "CPF";
             // 
-            // txtCpflAcessarContaBancaria
+            // txtCpfAcessarContaBancaria
             // 
-            this.txtCpflAcessarContaBancaria.AccessibleDescription = "";
-            this.txtCpflAcessarContaBancaria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCpflAcessarContaBancaria.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.txtCpflAcessarContaBancaria.Location = new System.Drawing.Point(287, 170);
-            this.txtCpflAcessarContaBancaria.MaxLength = 11;
-            this.txtCpflAcessarContaBancaria.Name = "txtCpflAcessarContaBancaria";
-            this.txtCpflAcessarContaBancaria.Size = new System.Drawing.Size(206, 20);
-            this.txtCpflAcessarContaBancaria.TabIndex = 20;
+            this.txtCpfAcessarContaBancaria.AccessibleDescription = "";
+            this.txtCpfAcessarContaBancaria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCpfAcessarContaBancaria.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.txtCpfAcessarContaBancaria.Location = new System.Drawing.Point(287, 227);
+            this.txtCpfAcessarContaBancaria.MaxLength = 11;
+            this.txtCpfAcessarContaBancaria.Name = "txtCpfAcessarContaBancaria";
+            this.txtCpfAcessarContaBancaria.Size = new System.Drawing.Size(206, 20);
+            this.txtCpfAcessarContaBancaria.TabIndex = 20;
             // 
             // btnVoltarTelaInicialAcessarContaBancaria
             // 
@@ -127,7 +127,7 @@
             this.btnVoltarTelaInicialAcessarContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltarTelaInicialAcessarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVoltarTelaInicialAcessarContaBancaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltarTelaInicialAcessarContaBancaria.Location = new System.Drawing.Point(434, 284);
+            this.btnVoltarTelaInicialAcessarContaBancaria.Location = new System.Drawing.Point(434, 341);
             this.btnVoltarTelaInicialAcessarContaBancaria.Name = "btnVoltarTelaInicialAcessarContaBancaria";
             this.btnVoltarTelaInicialAcessarContaBancaria.Size = new System.Drawing.Size(59, 45);
             this.btnVoltarTelaInicialAcessarContaBancaria.TabIndex = 30;
@@ -141,7 +141,7 @@
             this.btnLimparCamposAcessarContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimparCamposAcessarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLimparCamposAcessarContaBancaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimparCamposAcessarContaBancaria.Location = new System.Drawing.Point(362, 284);
+            this.btnLimparCamposAcessarContaBancaria.Location = new System.Drawing.Point(362, 341);
             this.btnLimparCamposAcessarContaBancaria.Name = "btnLimparCamposAcessarContaBancaria";
             this.btnLimparCamposAcessarContaBancaria.Size = new System.Drawing.Size(59, 45);
             this.btnLimparCamposAcessarContaBancaria.TabIndex = 29;
@@ -155,7 +155,7 @@
             this.btnAcessarContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAcessarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAcessarContaBancaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcessarContaBancaria.Location = new System.Drawing.Point(287, 284);
+            this.btnAcessarContaBancaria.Location = new System.Drawing.Point(287, 341);
             this.btnAcessarContaBancaria.Name = "btnAcessarContaBancaria";
             this.btnAcessarContaBancaria.Size = new System.Drawing.Size(59, 45);
             this.btnAcessarContaBancaria.TabIndex = 28;
@@ -167,7 +167,7 @@
             // 
             this.lblErroAutenticacaoAcessarContaBancaria.AutoSize = true;
             this.lblErroAutenticacaoAcessarContaBancaria.ForeColor = System.Drawing.Color.Red;
-            this.lblErroAutenticacaoAcessarContaBancaria.Location = new System.Drawing.Point(326, 257);
+            this.lblErroAutenticacaoAcessarContaBancaria.Location = new System.Drawing.Point(326, 314);
             this.lblErroAutenticacaoAcessarContaBancaria.Name = "lblErroAutenticacaoAcessarContaBancaria";
             this.lblErroAutenticacaoAcessarContaBancaria.Size = new System.Drawing.Size(131, 13);
             this.lblErroAutenticacaoAcessarContaBancaria.TabIndex = 31;
@@ -190,13 +190,16 @@
             this.Controls.Add(this.txtSenhaAcessarContaBancaria);
             this.Controls.Add(this.lblTituloCriarContaBancaria);
             this.Controls.Add(this.lblEmailAcessarContaBancaria);
-            this.Controls.Add(this.txtCpflAcessarContaBancaria);
+            this.Controls.Add(this.txtCpfAcessarContaBancaria);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Erro";
+            this.Text = "Banco Oots";
+            this.Load += new System.EventHandler(this.frmTelaLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -208,7 +211,7 @@
         private System.Windows.Forms.TextBox txtSenhaAcessarContaBancaria;
         private System.Windows.Forms.Label lblTituloCriarContaBancaria;
         private System.Windows.Forms.Label lblEmailAcessarContaBancaria;
-        private System.Windows.Forms.TextBox txtCpflAcessarContaBancaria;
+        private System.Windows.Forms.TextBox txtCpfAcessarContaBancaria;
         private System.Windows.Forms.Button btnVoltarTelaInicialAcessarContaBancaria;
         private System.Windows.Forms.Button btnLimparCamposAcessarContaBancaria;
         private System.Windows.Forms.Button btnAcessarContaBancaria;

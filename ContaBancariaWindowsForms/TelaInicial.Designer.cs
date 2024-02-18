@@ -101,6 +101,7 @@
             this.Controls.Add(this.btnCriarContaContaBancaria);
             this.Controls.Add(this.lblSubTitulo);
             this.Controls.Add(this.lblTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTelaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Banco Oots";

@@ -1,6 +1,6 @@
 ﻿namespace ContaBancariaWindowsForms
 {
-    partial class frmCriarConta
+    partial class frmTelaCriarConta
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCriarConta));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaCriarConta));
             this.txtNomeCriarContaBancaria = new System.Windows.Forms.TextBox();
             this.lblNomeCriarContaBancaria = new System.Windows.Forms.Label();
             this.btnCriarConta = new System.Windows.Forms.Button();
@@ -46,7 +46,7 @@
             this.lblErroEmailCriarContaBancaria = new System.Windows.Forms.Label();
             this.lblErroTelefoneCriarContaBancaria = new System.Windows.Forms.Label();
             this.lblErroCpfCriarContaBancaria = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblErroSenhaCriarContaBancaria = new System.Windows.Forms.Label();
             this.lblSenhaCriarContaBancaria = new System.Windows.Forms.Label();
             this.txtSenhaCriarContaBancaria = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -219,13 +219,13 @@
             this.lblErroCpfCriarContaBancaria.Size = new System.Drawing.Size(0, 13);
             this.lblErroCpfCriarContaBancaria.TabIndex = 21;
             // 
-            // label1
+            // lblErroSenhaCriarContaBancaria
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(534, 214);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 24;
+            this.lblErroSenhaCriarContaBancaria.AutoSize = true;
+            this.lblErroSenhaCriarContaBancaria.Location = new System.Drawing.Point(534, 214);
+            this.lblErroSenhaCriarContaBancaria.Name = "lblErroSenhaCriarContaBancaria";
+            this.lblErroSenhaCriarContaBancaria.Size = new System.Drawing.Size(0, 13);
+            this.lblErroSenhaCriarContaBancaria.TabIndex = 24;
             // 
             // lblSenhaCriarContaBancaria
             // 
@@ -247,12 +247,12 @@
             this.txtSenhaCriarContaBancaria.TabIndex = 22;
             this.txtSenhaCriarContaBancaria.UseSystemPasswordChar = true;
             // 
-            // frmCriarConta
+            // frmTelaCriarConta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblErroSenhaCriarContaBancaria);
             this.Controls.Add(this.lblSenhaCriarContaBancaria);
             this.Controls.Add(this.txtSenhaCriarContaBancaria);
             this.Controls.Add(this.lblErroCpfCriarContaBancaria);
@@ -273,7 +273,8 @@
             this.Controls.Add(this.lblNomeCriarContaBancaria);
             this.Controls.Add(this.txtNomeCriarContaBancaria);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Name = "frmCriarConta";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmTelaCriarConta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Banco Oots";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -300,7 +301,7 @@
         private System.Windows.Forms.Label lblErroEmailCriarContaBancaria;
         private System.Windows.Forms.Label lblErroTelefoneCriarContaBancaria;
         private System.Windows.Forms.Label lblErroCpfCriarContaBancaria;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblErroSenhaCriarContaBancaria;
         private System.Windows.Forms.Label lblSenhaCriarContaBancaria;
         private System.Windows.Forms.TextBox txtSenhaCriarContaBancaria;
     }

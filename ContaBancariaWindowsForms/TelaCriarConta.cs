@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace ContaBancariaWindowsForms
 {
-    public partial class frmCriarConta : Form
+    public partial class frmTelaCriarConta : Form
     {
-        public frmCriarConta()
+        public frmTelaCriarConta()
         {
             InitializeComponent();
         }
@@ -29,15 +29,27 @@ namespace ContaBancariaWindowsForms
         private void btnCriarConta_Click(object sender, EventArgs e)
         {
             LimparCamposErros();
-            List<Titular> titular = new List<Titular>();
+
+            int erro = 0;
+
             var nome = txtNomeCriarContaBancaria.Text;
+
+            while (nome.Length < 3)
+            {
+                lblErroNomeCriarContaBancaria.Text = "Insira um nome com mais de 2 caractéres";
+                erro++;
+            }
+
             var senha = txtSenhaCriarContaBancaria.Text;
             var email = txtEmailCriarContaBancaria.Text;
             var telefone = txtTelefoneCriarContaBancaria.Text;
             var cpf = txtCpfCriarContaBancaria.Text;
+
+            List<Titular> titular = new List<Titular>();
             titular.Add(new Titular(nome, senha, email, telefone, cpf));
-            int erro = 0;
+
             bool isInteger = false;
+
             while (!isInteger)
             {
                 nome = txtNomeCriarContaBancaria.Text;
@@ -96,7 +108,7 @@ namespace ContaBancariaWindowsForms
         public void LimparCamposErros()
         {
             lblErroNomeCriarContaBancaria.Text = "";
-           
+            lblErroSenhaCriarContaBancaria.Text = "";
             lblErroEmailCriarContaBancaria.Text = "";
             lblErroTelefoneCriarContaBancaria.Text = "";
             lblErroCpfCriarContaBancaria.Text = "";

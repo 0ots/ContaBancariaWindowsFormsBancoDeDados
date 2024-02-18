@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace ContaBancariaWindowsForms
 {
@@ -89,60 +90,50 @@ namespace ContaBancariaWindowsForms
             Senha = senha;
             Email = email;
             Telefone = telefone;
-            _cpf = cpf;
+            Cpf = cpf;
             Saldo = 0.00;
+        }
+        // Contrutor vazio para apenas criar um objeto e utilizar os métodos
+        public Titular()
+        {
+
         }
         // Método para retornar a string de inserção do titular
         public string InserirTitular()
         {
-            return $"INSERT INTO titular(nome, senha, email, telefone, cpf, saldo) VALUES('{Nome}', '{Senha}','{Email}', '{Telefone}', '{Cpf}', '{Saldo}')";
+            return $"INSERT INTO titular(nome, senha, email, telefone, cpf, saldo) VALUES('{Nome}', '{Senha}','{Email}', '{Telefone}', '{Cpf}', '{Saldo.ToString("F2", CultureInfo.InvariantCulture)}')";
         }
-        // Método para retornar a string atualização dos dados do titular
-        public string AlterarDadosTitular()
-        {
-            return $"UPDATE titular SET nome = '{Nome}', email = '{Email}', telefone = '{Telefone}'";
-        }
-        // Método para retornar a string de atualização de senha do titular
-        public string AlterarSenhaTitular()
-        {
-            return $"UPDATE titular SET senha = '{Senha}'";
-        }
+        // Método para atualizar dados
+
         // Método para retornar a string de deleção do titular
-        public string DeletarTitular()
+        public string DeletarTitular(int userID)
         {
-            return $"DELETE FROM usuario where id = ''";
+            return $"DELETE FROM usuario where id = '{userID}'";
         }
         // Método para retornar a string de consulta do saldo do titular
-        public string RetornarSaldoTitular()
+        public string RetornarSaldoTitular(int userID)
         {
-            return "SELECT saldo FROM titular where id = ''";
+            return $"SELECT saldo FROM titular where id = '{userID}'";
         }
         // Método para retornar a string de consulta dos dados de um titular específico a partir de seu id
-        public string RetornarDadosTitularEspecifico()
+        public string RetornarDadosTitularEspecifico(int userID)
         {
-            return "SELECT nome, email, telefone, saldo FROM usuario where id = ''";
+            return $"SELECT nome, email, telefone, saldo FROM usuario where id = '{userID}'";
         }
         // Método para retornar a string de consulta dos dados de todos os titulares
         public string RetornarDadosTodosTitulares()
         {
             return $"SELECT nome, email, telefone, saldo FROM usuario";
         }
-        // Méotodo para retornar a string de consulta do saldo de um titular específico a partir de seu id
-        public string RetornarSaldoFuncionario()
-        {
-            return $"SELECT valor FROM titular where id = ''";
-        }
         // Método para realizar um depósito recebendo um valor como parâmetro
-        public string RealizarDeposito(double valor)
+        public string RealizarDeposito(double valor, int userID)
         {
-            Saldo += valor;
-            return $"UPDATE titular SET saldo = '{valor}' where id = ''";
+            return $"UPDATE titular SET saldo = '{valor}' where id = '{userID}'";
         }
         // Método para realizar um saque recebendo um valor como parâmetro
-        public string RealizarSaque(double valor)
+        public string RealizarSaque(double valor, int userID)
         {
-            Saldo -= valor;
-            return $"UPDATE titular SET saldo = '{valor}' where id = ''";
+            return $"UPDATE titular SET saldo = '{valor}' where id = '{userID}'";
         }
     }
 }
