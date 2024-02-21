@@ -19,13 +19,12 @@ namespace ContaBancariaWindowsForms
             InitializeComponent();
             this.userID = userID;
         }
-
         private void btnRealizarSaqueTelaInicialContaBancaria_Click(object sender, EventArgs e)
         {
             try
             {
                 Titular titular = new Titular();
-                double valor_a_sacar = double.Parse(txtQuantidadeRealizarDepositoContaBancaria.Text);
+                double valor_a_sacar = double.Parse(txtQuantidadeRealizarSaqueContaBancaria.Text);
 
                 MySqlConnection Conexao = new MySqlConnection("datasource=localhost;username=root;password=;database=contabancaria");
 
@@ -52,11 +51,21 @@ namespace ContaBancariaWindowsForms
             }
             catch
             {
-                MessageBox.Show("Houve um erro.");
+                MessageBox.Show("Houve um erro ao realizar o saque.");
                 frmTelaInicialContaTitular frmtelainicialcontatitular = new frmTelaInicialContaTitular(userID);
                 frmtelainicialcontatitular.Show();
                 this.Hide();
             }
+        }
+        private void btnLimparCampoRealizarDepositoTelaInicialContaBancaria_Click(object sender, EventArgs e)
+        {
+            txtQuantidadeRealizarSaqueContaBancaria.Text = "";
+        }
+        private void btnEncerrarRealizarSaqueTelaInicialContaBancaria_Click(object sender, EventArgs e)
+        {
+            frmTelaInicialContaTitular frmtelainicialcontatitular = new frmTelaInicialContaTitular(userID);
+            frmtelainicialcontatitular.Show();
+            this.Hide();
         }
     }
 }

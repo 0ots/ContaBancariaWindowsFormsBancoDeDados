@@ -123,9 +123,12 @@
             // 
             // btnVoltarTelaInicialAcessarContaBancaria
             // 
+            this.btnVoltarTelaInicialAcessarContaBancaria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnVoltarTelaInicialAcessarContaBancaria.BackColor = System.Drawing.Color.White;
             this.btnVoltarTelaInicialAcessarContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVoltarTelaInicialAcessarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVoltarTelaInicialAcessarContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnVoltarTelaInicialAcessarContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnVoltarTelaInicialAcessarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltarTelaInicialAcessarContaBancaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltarTelaInicialAcessarContaBancaria.Location = new System.Drawing.Point(434, 341);
             this.btnVoltarTelaInicialAcessarContaBancaria.Name = "btnVoltarTelaInicialAcessarContaBancaria";
@@ -137,9 +140,12 @@
             // 
             // btnLimparCamposAcessarContaBancaria
             // 
+            this.btnLimparCamposAcessarContaBancaria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLimparCamposAcessarContaBancaria.BackColor = System.Drawing.Color.White;
             this.btnLimparCamposAcessarContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimparCamposAcessarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLimparCamposAcessarContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnLimparCamposAcessarContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnLimparCamposAcessarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimparCamposAcessarContaBancaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimparCamposAcessarContaBancaria.Location = new System.Drawing.Point(362, 341);
             this.btnLimparCamposAcessarContaBancaria.Name = "btnLimparCamposAcessarContaBancaria";
@@ -151,9 +157,12 @@
             // 
             // btnAcessarContaBancaria
             // 
+            this.btnAcessarContaBancaria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAcessarContaBancaria.BackColor = System.Drawing.Color.White;
             this.btnAcessarContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAcessarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAcessarContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAcessarContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnAcessarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcessarContaBancaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcessarContaBancaria.Location = new System.Drawing.Point(287, 341);
             this.btnAcessarContaBancaria.Name = "btnAcessarContaBancaria";
@@ -178,6 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblErroAutenticacaoAcessarContaBancaria);
             this.Controls.Add(this.btnVoltarTelaInicialAcessarContaBancaria);

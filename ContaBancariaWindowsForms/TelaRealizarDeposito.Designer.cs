@@ -43,7 +43,6 @@
             // 
             this.btnRealizarDepositoTelaInicialContaBancaria.BackColor = System.Drawing.Color.GreenYellow;
             this.btnRealizarDepositoTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRealizarDepositoTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRealizarDepositoTelaInicialContaBancaria.Location = new System.Drawing.Point(286, 290);
             this.btnRealizarDepositoTelaInicialContaBancaria.Name = "btnRealizarDepositoTelaInicialContaBancaria";
             this.btnRealizarDepositoTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
@@ -76,7 +75,6 @@
             // 
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.Location = new System.Drawing.Point(367, 290);
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.Name = "btnLimparCampoRealizarDepositoTelaInicialContaBancaria";
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
@@ -89,7 +87,6 @@
             // 
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.BackColor = System.Drawing.Color.IndianRed;
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.Location = new System.Drawing.Point(448, 290);
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.Name = "btnEncerrarRealizarSaqueTelaInicialContaBancaria";
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
@@ -122,6 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblNomeRealizarSaqueContaBancaria);

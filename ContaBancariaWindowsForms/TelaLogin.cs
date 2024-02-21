@@ -23,7 +23,6 @@ namespace ContaBancariaWindowsForms
         {
             MySqlConnection Conexao = new MySqlConnection("datasource=localhost;username=root;password=;database=contabancaria");
 
-
             try
             {
                 string cpf = txtCpfAcessarContaBancaria.Text;

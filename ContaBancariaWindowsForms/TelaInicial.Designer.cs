@@ -58,15 +58,20 @@
             // btnCriarContaContaBancaria
             // 
             this.btnCriarContaContaBancaria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCriarContaContaBancaria.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCriarContaContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCriarContaContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCriarContaContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCriarContaContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnCriarContaContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCriarContaContaBancaria.Location = new System.Drawing.Point(402, 264);
             this.btnCriarContaContaBancaria.Name = "btnCriarContaContaBancaria";
             this.btnCriarContaContaBancaria.Size = new System.Drawing.Size(75, 48);
             this.btnCriarContaContaBancaria.TabIndex = 3;
             this.btnCriarContaContaBancaria.Text = "Criar Conta";
-            this.btnCriarContaContaBancaria.UseVisualStyleBackColor = true;
+            this.btnCriarContaContaBancaria.UseVisualStyleBackColor = false;
             this.btnCriarContaContaBancaria.Click += new System.EventHandler(this.btnCriarContaContaBancaria_Click);
+            this.btnCriarContaContaBancaria.MouseLeave += new System.EventHandler(this.btnCriarContaContaBancaria_MouseLeave);
+            this.btnCriarContaContaBancaria.MouseHover += new System.EventHandler(this.btnCriarContaContaBancaria_MouseHover);
             // 
             // pictureBox1
             // 
@@ -81,20 +86,26 @@
             // btnAcessarContaContaBancaria
             // 
             this.btnAcessarContaContaBancaria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAcessarContaContaBancaria.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAcessarContaContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAcessarContaContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAcessarContaContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAcessarContaContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnAcessarContaContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcessarContaContaBancaria.Location = new System.Drawing.Point(325, 264);
             this.btnAcessarContaContaBancaria.Name = "btnAcessarContaContaBancaria";
             this.btnAcessarContaContaBancaria.Size = new System.Drawing.Size(75, 48);
             this.btnAcessarContaContaBancaria.TabIndex = 17;
             this.btnAcessarContaContaBancaria.Text = "Acessar Conta";
-            this.btnAcessarContaContaBancaria.UseVisualStyleBackColor = true;
+            this.btnAcessarContaContaBancaria.UseVisualStyleBackColor = false;
             this.btnAcessarContaContaBancaria.Click += new System.EventHandler(this.btnAcessarContaContaBancaria_Click);
+            this.btnAcessarContaContaBancaria.MouseLeave += new System.EventHandler(this.btnAcessarContaContaBancaria_MouseLeave);
+            this.btnAcessarContaContaBancaria.MouseHover += new System.EventHandler(this.btnAcessarContaContaBancaria_MouseHover);
             // 
             // frmTelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAcessarContaContaBancaria);
             this.Controls.Add(this.pictureBox1);

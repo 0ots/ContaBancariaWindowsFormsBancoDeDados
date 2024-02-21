@@ -32,41 +32,68 @@ namespace ContaBancariaWindowsForms
 
             int erro = 0;
 
+            bool isInteger = false;
             var nome = txtNomeCriarContaBancaria.Text;
-
             while (nome.Length < 3)
             {
-                lblErroNomeCriarContaBancaria.Text = "Insira um nome com mais de 2 caractéres";
+                lblErroNomeCriarContaBancaria.Visible = true;
+                lblErroNomeCriarContaBancaria.Text = "O nome deve conter pelo menos 3 caracteres";
                 erro++;
+                break;
             }
-
-            var senha = txtSenhaCriarContaBancaria.Text;
-            var email = txtEmailCriarContaBancaria.Text;
-            var telefone = txtTelefoneCriarContaBancaria.Text;
-            var cpf = txtCpfCriarContaBancaria.Text;
-
-            List<Titular> titular = new List<Titular>();
-            titular.Add(new Titular(nome, senha, email, telefone, cpf));
-
-            bool isInteger = false;
-
             while (!isInteger)
             {
+                lblErroNomeCriarContaBancaria.Visible = true;
                 nome = txtNomeCriarContaBancaria.Text;
                 if (int.TryParse(nome, out _))
                 {
-                    lblErroNomeCriarContaBancaria.Text = "Apenas caracteres de A - Z";
+                    lblErroNomeCriarContaBancaria.Visible = true;
+                    lblErroNomeCriarContaBancaria.Text = "O nome deve conter apenas caracteres de A - Z";
                     isInteger = true;
                     erro++;
                 }
                 if (double.TryParse(nome, out _))
                 {
-                    lblErroNomeCriarContaBancaria.Text = "Apenas caracteres A - Z";
+                    lblErroNomeCriarContaBancaria.Visible = true;
+                    lblErroNomeCriarContaBancaria.Text = "O nome deve conter apenas caracteres de A - Z";
                     isInteger = true;
                     erro++;
                 }
                 break;
             }
+
+            var senha = txtSenhaCriarContaBancaria.Text;
+            while(senha.Length < 6)
+            {
+                lblErroSenhaCriarContaBancaria.Visible= true;
+                lblErroSenhaCriarContaBancaria.Text = "A senha deve conter entre 6 e 12 caracteres";
+                erro++;
+                break;
+            }
+
+            var email = txtEmailCriarContaBancaria.Text;
+
+            var telefone = txtTelefoneCriarContaBancaria.Text;
+            while (telefone.Length < 11)
+            {
+                lblErroTelefoneCriarContaBancaria.Visible = true;
+                lblErroTelefoneCriarContaBancaria.Text = "O telefone deve conter 11 caracteres númericos";
+                erro++;
+                break;
+            }
+
+            var cpf = txtCpfCriarContaBancaria.Text;
+            while (cpf.Length < 11)
+            {
+                lblErroCpfCriarContaBancaria.Visible = true;
+                lblErroCpfCriarContaBancaria.Text = "O CPF deve conter 11 caracteres númericos";
+                erro++;
+                break;
+            }
+
+            List<Titular> titular = new List<Titular>();
+            titular.Add(new Titular(nome, senha, email, telefone, cpf));
+
             if (erro == 0)
             {
                 try
@@ -86,7 +113,7 @@ namespace ContaBancariaWindowsForms
                 }
                 catch
                 {
-                    MessageBox.Show("Houve um erro ao cadastrar o titular");
+                    MessageBox.Show("Houve um erro ao cadastrar o titular.");
                 }
             }
         }
@@ -112,6 +139,16 @@ namespace ContaBancariaWindowsForms
             lblErroEmailCriarContaBancaria.Text = "";
             lblErroTelefoneCriarContaBancaria.Text = "";
             lblErroCpfCriarContaBancaria.Text = "";
+        }
+
+        private void btnCriarConta_MouseHover(object sender, EventArgs e)
+        {
+            btnCriarConta.BackColor = Color.DarkGreen;
+        }
+
+        private void btnCriarConta_MouseLeave(object sender, EventArgs e)
+        {
+            btnCriarConta.BackColor = Color.GreenYellow;
         }
     }
 }
