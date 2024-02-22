@@ -29,20 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaEditarDadosTitular));
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblErroSenhaEditarContaBancaria = new System.Windows.Forms.Label();
             this.lblSenhaCriarContaBancaria = new System.Windows.Forms.Label();
             this.txtSenhaEditarContaBancaria = new System.Windows.Forms.TextBox();
-            this.lblErroNomeCriarContaBancaria = new System.Windows.Forms.Label();
+            this.lblErroNomeEditarContaBancaria = new System.Windows.Forms.Label();
             this.lblNomeCriarContaBancaria = new System.Windows.Forms.Label();
             this.txtNomeEditarContaBancaria = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblErroEmailEditarContaBancaria = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtEmailEditarContaBancaria = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblErroTelefoneEditarContaBancaria = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTelefoneEditarContaBancaria = new System.Windows.Forms.TextBox();
             this.btnVoltarTelaInicialCriarContaBancaria = new System.Windows.Forms.Button();
-            this.btnLimparCamposContaBancaria = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTituloCriarContaBancaria = new System.Windows.Forms.Label();
             this.lblNomeEditarContaBancaria = new System.Windows.Forms.Label();
@@ -50,13 +49,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblErroSenhaEditarContaBancaria
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(522, 240);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 30;
+            this.lblErroSenhaEditarContaBancaria.AutoSize = true;
+            this.lblErroSenhaEditarContaBancaria.Location = new System.Drawing.Point(522, 240);
+            this.lblErroSenhaEditarContaBancaria.Name = "lblErroSenhaEditarContaBancaria";
+            this.lblErroSenhaEditarContaBancaria.Size = new System.Drawing.Size(0, 13);
+            this.lblErroSenhaEditarContaBancaria.TabIndex = 30;
             // 
             // lblSenhaCriarContaBancaria
             // 
@@ -78,13 +77,13 @@
             this.txtSenhaEditarContaBancaria.TabIndex = 28;
             this.txtSenhaEditarContaBancaria.UseSystemPasswordChar = true;
             // 
-            // lblErroNomeCriarContaBancaria
+            // lblErroNomeEditarContaBancaria
             // 
-            this.lblErroNomeCriarContaBancaria.AutoSize = true;
-            this.lblErroNomeCriarContaBancaria.Location = new System.Drawing.Point(522, 199);
-            this.lblErroNomeCriarContaBancaria.Name = "lblErroNomeCriarContaBancaria";
-            this.lblErroNomeCriarContaBancaria.Size = new System.Drawing.Size(0, 13);
-            this.lblErroNomeCriarContaBancaria.TabIndex = 27;
+            this.lblErroNomeEditarContaBancaria.AutoSize = true;
+            this.lblErroNomeEditarContaBancaria.Location = new System.Drawing.Point(522, 199);
+            this.lblErroNomeEditarContaBancaria.Name = "lblErroNomeEditarContaBancaria";
+            this.lblErroNomeEditarContaBancaria.Size = new System.Drawing.Size(0, 13);
+            this.lblErroNomeEditarContaBancaria.TabIndex = 27;
             // 
             // lblNomeCriarContaBancaria
             // 
@@ -105,13 +104,13 @@
             this.txtNomeEditarContaBancaria.Size = new System.Drawing.Size(206, 20);
             this.txtNomeEditarContaBancaria.TabIndex = 25;
             // 
-            // label2
+            // lblErroEmailEditarContaBancaria
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(523, 289);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
-            this.label2.TabIndex = 33;
+            this.lblErroEmailEditarContaBancaria.AutoSize = true;
+            this.lblErroEmailEditarContaBancaria.Location = new System.Drawing.Point(523, 289);
+            this.lblErroEmailEditarContaBancaria.Name = "lblErroEmailEditarContaBancaria";
+            this.lblErroEmailEditarContaBancaria.Size = new System.Drawing.Size(0, 13);
+            this.lblErroEmailEditarContaBancaria.TabIndex = 33;
             // 
             // label3
             // 
@@ -132,13 +131,13 @@
             this.txtEmailEditarContaBancaria.Size = new System.Drawing.Size(206, 20);
             this.txtEmailEditarContaBancaria.TabIndex = 31;
             // 
-            // label4
+            // lblErroTelefoneEditarContaBancaria
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(522, 337);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 13);
-            this.label4.TabIndex = 36;
+            this.lblErroTelefoneEditarContaBancaria.AutoSize = true;
+            this.lblErroTelefoneEditarContaBancaria.Location = new System.Drawing.Point(522, 337);
+            this.lblErroTelefoneEditarContaBancaria.Name = "lblErroTelefoneEditarContaBancaria";
+            this.lblErroTelefoneEditarContaBancaria.Size = new System.Drawing.Size(0, 13);
+            this.lblErroTelefoneEditarContaBancaria.TabIndex = 36;
             // 
             // label5
             // 
@@ -166,26 +165,13 @@
             this.btnVoltarTelaInicialCriarContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnVoltarTelaInicialCriarContaBancaria.FlatAppearance.BorderSize = 2;
             this.btnVoltarTelaInicialCriarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltarTelaInicialCriarContaBancaria.Location = new System.Drawing.Point(444, 371);
+            this.btnVoltarTelaInicialCriarContaBancaria.Location = new System.Drawing.Point(401, 371);
             this.btnVoltarTelaInicialCriarContaBancaria.Name = "btnVoltarTelaInicialCriarContaBancaria";
             this.btnVoltarTelaInicialCriarContaBancaria.Size = new System.Drawing.Size(59, 45);
             this.btnVoltarTelaInicialCriarContaBancaria.TabIndex = 39;
             this.btnVoltarTelaInicialCriarContaBancaria.Text = "Voltar";
             this.btnVoltarTelaInicialCriarContaBancaria.UseVisualStyleBackColor = false;
-            // 
-            // btnLimparCamposContaBancaria
-            // 
-            this.btnLimparCamposContaBancaria.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLimparCamposContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimparCamposContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnLimparCamposContaBancaria.FlatAppearance.BorderSize = 2;
-            this.btnLimparCamposContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimparCamposContaBancaria.Location = new System.Drawing.Point(372, 371);
-            this.btnLimparCamposContaBancaria.Name = "btnLimparCamposContaBancaria";
-            this.btnLimparCamposContaBancaria.Size = new System.Drawing.Size(59, 45);
-            this.btnLimparCamposContaBancaria.TabIndex = 38;
-            this.btnLimparCamposContaBancaria.Text = "Limpar";
-            this.btnLimparCamposContaBancaria.UseVisualStyleBackColor = false;
+            this.btnVoltarTelaInicialCriarContaBancaria.Click += new System.EventHandler(this.btnVoltarTelaInicialCriarContaBancaria_Click);
             // 
             // pictureBox1
             // 
@@ -222,7 +208,7 @@
             this.btnAtualizarDadosContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAtualizarDadosContaBancaria.FlatAppearance.BorderSize = 2;
             this.btnAtualizarDadosContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtualizarDadosContaBancaria.Location = new System.Drawing.Point(297, 371);
+            this.btnAtualizarDadosContaBancaria.Location = new System.Drawing.Point(336, 371);
             this.btnAtualizarDadosContaBancaria.Name = "btnAtualizarDadosContaBancaria";
             this.btnAtualizarDadosContaBancaria.Size = new System.Drawing.Size(59, 45);
             this.btnAtualizarDadosContaBancaria.TabIndex = 43;
@@ -241,17 +227,16 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTituloCriarContaBancaria);
             this.Controls.Add(this.btnVoltarTelaInicialCriarContaBancaria);
-            this.Controls.Add(this.btnLimparCamposContaBancaria);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblErroTelefoneEditarContaBancaria);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTelefoneEditarContaBancaria);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblErroEmailEditarContaBancaria);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtEmailEditarContaBancaria);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblErroSenhaEditarContaBancaria);
             this.Controls.Add(this.lblSenhaCriarContaBancaria);
             this.Controls.Add(this.txtSenhaEditarContaBancaria);
-            this.Controls.Add(this.lblErroNomeCriarContaBancaria);
+            this.Controls.Add(this.lblErroNomeEditarContaBancaria);
             this.Controls.Add(this.lblNomeCriarContaBancaria);
             this.Controls.Add(this.txtNomeEditarContaBancaria);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -267,20 +252,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblErroSenhaEditarContaBancaria;
         private System.Windows.Forms.Label lblSenhaCriarContaBancaria;
         private System.Windows.Forms.TextBox txtSenhaEditarContaBancaria;
-        private System.Windows.Forms.Label lblErroNomeCriarContaBancaria;
+        private System.Windows.Forms.Label lblErroNomeEditarContaBancaria;
         private System.Windows.Forms.Label lblNomeCriarContaBancaria;
         private System.Windows.Forms.TextBox txtNomeEditarContaBancaria;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblErroEmailEditarContaBancaria;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtEmailEditarContaBancaria;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblErroTelefoneEditarContaBancaria;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtTelefoneEditarContaBancaria;
         private System.Windows.Forms.Button btnVoltarTelaInicialCriarContaBancaria;
-        private System.Windows.Forms.Button btnLimparCamposContaBancaria;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTituloCriarContaBancaria;
         private System.Windows.Forms.Label lblNomeEditarContaBancaria;

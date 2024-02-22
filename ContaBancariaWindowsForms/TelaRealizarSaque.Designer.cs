@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaRealizarSaque));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblNomeRealizarDepositoContaBancaria = new System.Windows.Forms.Label();
+            this.lblNomeRealizarSaqueContaBancaria = new System.Windows.Forms.Label();
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria = new System.Windows.Forms.Button();
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria = new System.Windows.Forms.Button();
             this.txtQuantidadeRealizarSaqueContaBancaria = new System.Windows.Forms.TextBox();
@@ -49,14 +49,14 @@
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
-            // lblNomeRealizarDepositoContaBancaria
+            // lblNomeRealizarSaqueContaBancaria
             // 
-            this.lblNomeRealizarDepositoContaBancaria.AutoSize = true;
-            this.lblNomeRealizarDepositoContaBancaria.Location = new System.Drawing.Point(382, 206);
-            this.lblNomeRealizarDepositoContaBancaria.Name = "lblNomeRealizarDepositoContaBancaria";
-            this.lblNomeRealizarDepositoContaBancaria.Size = new System.Drawing.Size(35, 13);
-            this.lblNomeRealizarDepositoContaBancaria.TabIndex = 32;
-            this.lblNomeRealizarDepositoContaBancaria.Text = "Nome";
+            this.lblNomeRealizarSaqueContaBancaria.AutoSize = true;
+            this.lblNomeRealizarSaqueContaBancaria.Location = new System.Drawing.Point(382, 206);
+            this.lblNomeRealizarSaqueContaBancaria.Name = "lblNomeRealizarSaqueContaBancaria";
+            this.lblNomeRealizarSaqueContaBancaria.Size = new System.Drawing.Size(35, 13);
+            this.lblNomeRealizarSaqueContaBancaria.TabIndex = 32;
+            this.lblNomeRealizarSaqueContaBancaria.Text = "Nome";
             // 
             // btnEncerrarRealizarSaqueTelaInicialContaBancaria
             // 
@@ -130,7 +130,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblNomeRealizarDepositoContaBancaria);
+            this.Controls.Add(this.lblNomeRealizarSaqueContaBancaria);
             this.Controls.Add(this.btnEncerrarRealizarSaqueTelaInicialContaBancaria);
             this.Controls.Add(this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria);
             this.Controls.Add(this.txtQuantidadeRealizarSaqueContaBancaria);
@@ -140,6 +140,7 @@
             this.Name = "frmTelaRealizarSaque";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Banco Oots";
+            this.Load += new System.EventHandler(this.frmTelaRealizarSaque_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -149,7 +150,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblNomeRealizarDepositoContaBancaria;
+        private System.Windows.Forms.Label lblNomeRealizarSaqueContaBancaria;
         private System.Windows.Forms.Button btnEncerrarRealizarSaqueTelaInicialContaBancaria;
         private System.Windows.Forms.Button btnLimparCampoRealizarDepositoTelaInicialContaBancaria;
         private System.Windows.Forms.TextBox txtQuantidadeRealizarSaqueContaBancaria;

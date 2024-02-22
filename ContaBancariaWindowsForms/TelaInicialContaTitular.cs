@@ -43,21 +43,31 @@ namespace ContaBancariaWindowsForms
         {
             MySqlConnection Conexao = new MySqlConnection("datasource=localhost;username=root;password=;database=contabancaria");
 
-            string sql_code_nome = $"SELECT nome FROM titular WHERE id = '{userID}'";
-            string sql_code_saldo = $"SELECT saldo FROM titular WHERE id = '{userID}'";
+            try
+            {
+                string sql_code_nome = $"SELECT nome FROM titular WHERE id = '{userID}'";
+                string sql_code_saldo = $"SELECT saldo FROM titular WHERE id = '{userID}'";
 
-            MySqlCommand comando_obter_nome = new MySqlCommand(sql_code_nome, Conexao);
-            MySqlCommand comando_obter_saldo = new MySqlCommand(sql_code_saldo, Conexao);
+                MySqlCommand comando_obter_nome = new MySqlCommand(sql_code_nome, Conexao);
+                MySqlCommand comando_obter_saldo = new MySqlCommand(sql_code_saldo, Conexao);
 
-            Conexao.Open();
+                Conexao.Open();
 
-            string nome = comando_obter_nome.ExecuteScalar()?.ToString();
-            string saldo = comando_obter_saldo.ExecuteScalar()?.ToString();
+                string nome = comando_obter_nome.ExecuteScalar()?.ToString();
+                string saldo = comando_obter_saldo.ExecuteScalar()?.ToString();
 
-            Conexao.Close();
-
-            lblRetornarNomeTitularTelaInicialContaBancaria.Text = nome;
-            lblRetornarSaldoTelaInicialContaBancaria.Text = saldo;
+                lblRetornarNomeTitularTelaInicialContaBancaria.Text = nome;
+                lblRetornarSaldoTelaInicialContaBancaria.Text = saldo;
+            }
+            catch
+            {
+                MessageBox.Show("Houve um erro ao conectar com o banco de dados. \nContate o administrador", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            finally
+            {
+                Conexao.Close();
+            }
+            
         }
 
         private void btnEditarTitularContaBancaria_Click(object sender, EventArgs e)

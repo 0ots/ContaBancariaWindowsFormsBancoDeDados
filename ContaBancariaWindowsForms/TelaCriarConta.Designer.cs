@@ -56,7 +56,7 @@
             // 
             this.txtNomeCriarContaBancaria.AccessibleDescription = "";
             this.txtNomeCriarContaBancaria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNomeCriarContaBancaria.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.txtNomeCriarContaBancaria.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNomeCriarContaBancaria.Location = new System.Drawing.Point(305, 170);
             this.txtNomeCriarContaBancaria.MaxLength = 60;
             this.txtNomeCriarContaBancaria.Name = "txtNomeCriarContaBancaria";

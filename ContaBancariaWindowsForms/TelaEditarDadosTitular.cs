@@ -40,7 +40,6 @@ namespace ContaBancariaWindowsForms
             MySqlCommand comando_obter_email = new MySqlCommand(obter_email_titular, Conexao);
             MySqlCommand comando_obter_telefone = new MySqlCommand(obter_telefone_titular, Conexao);
 
-
             Conexao.Open();
 
             string nome = comando_obter_nome.ExecuteScalar()?.ToString();
@@ -58,37 +57,99 @@ namespace ContaBancariaWindowsForms
         }
         private void btnAtualizarDadosContaBancaria_Click(object sender, EventArgs e)
         {
-            string nome = txtNomeEditarContaBancaria.Text;
-            string senha = txtSenhaEditarContaBancaria.Text;
-            string email = txtSenhaEditarContaBancaria.Text;
-            string telefone = txtTelefoneEditarContaBancaria.Text;
+            int erro = 0;
+            bool isInteger = false;
 
-            MySqlConnection Conexao = new MySqlConnection("datasource=localhost;username=root;password=;database=contabancaria");
-
-            try
+            var nome = txtNomeEditarContaBancaria.Text;
+            while (nome.Length < 3)
             {
-                string alterar_dados = titular.AlterarDados(nome, senha, email, telefone, userID);
-
-                MySqlCommand comando_alterar_dados = new MySqlCommand(alterar_dados, Conexao);
-
-                Conexao.Open();
-
-                string alterar_dados_titular = comando_alterar_dados.ExecuteScalar()?.ToString();
-
-                MessageBox.Show("Dados atualizados com sucesso!");
-
-                frmTelaInicialContaTitular frmtelainicialcontatitular = new frmTelaInicialContaTitular(userID);
-                frmtelainicialcontatitular.Show();
-                this.Hide();
+                lblErroNomeEditarContaBancaria.Visible = true;
+                lblErroNomeEditarContaBancaria.Text = "O nome deve conter pelo menos 3 caracteres";
+                erro++;
+                break;
             }
-            catch (Exception ex)
+            while (!isInteger)
             {
-                MessageBox.Show("Houve um erro ao atualizar os dados");
+                lblErroNomeEditarContaBancaria.Visible = true;
+                nome = txtNomeEditarContaBancaria.Text;
+                if (int.TryParse(nome, out _))
+                {
+                    lblErroNomeEditarContaBancaria.Visible = true;
+                    lblErroNomeEditarContaBancaria.Text = "O nome deve conter apenas caracteres de A - Z";
+                    isInteger = true;
+                    erro++;
+                }
+                if (double.TryParse(nome, out _))
+                {
+                    lblErroNomeEditarContaBancaria.Visible = true;
+                    lblErroNomeEditarContaBancaria.Text = "O nome deve conter apenas caracteres de A - Z";
+                    isInteger = true;
+                    erro++;
+                }
+                break;
             }
-            finally 
+
+            var senha = txtSenhaEditarContaBancaria.Text;
+            while (senha.Length < 6)
             {
-                Conexao.Close(); 
+                lblErroSenhaEditarContaBancaria.Visible = true;
+                lblErroSenhaEditarContaBancaria.Text = "A senha deve conter entre 6 e 12 caracteres";
+                erro++;
+                break;
             }
+
+            var email = txtEmailEditarContaBancaria.Text;
+
+            var telefone = txtTelefoneEditarContaBancaria.Text;
+            while (telefone.Length < 11)
+            {
+                lblErroTelefoneEditarContaBancaria.Visible = true;
+                lblErroTelefoneEditarContaBancaria.Text = "O telefone deve conter 11 caracteres númericos";
+                erro++;
+                break;
+            }
+
+            if(erro == 0)
+            {
+
+                MySqlConnection Conexao = new MySqlConnection("datasource=localhost;username=root;password=;database=contabancaria");
+
+                try
+                {
+                    string alterar_dados = titular.AlterarDados(nome, senha, email, telefone, userID);
+
+                    MySqlCommand comando_alterar_dados = new MySqlCommand(alterar_dados, Conexao);
+
+                    Conexao.Open();
+
+                    string alterar_dados_titular = comando_alterar_dados.ExecuteScalar()?.ToString();
+
+                    MessageBox.Show("Dados atualizados com sucesso!");
+
+                    frmTelaInicialContaTitular frmtelainicialcontatitular = new frmTelaInicialContaTitular(userID);
+                    frmtelainicialcontatitular.Show();
+                    this.Hide();
+                }
+                catch
+                {
+                    MessageBox.Show("Houve um erro ao atualizar os dados");
+                }
+                finally
+                {
+                    Conexao.Close();
+                }
+
+            }
+        }
+        private void btnVoltarTelaInicialCriarContaBancaria_Click(object sender, EventArgs e)
+        {
+            VoltarTelaInicialContaBancaria();
+        }
+        public void VoltarTelaInicialContaBancaria()
+        {
+            frmTelaInicialContaTitular frmtelainicialcontatitular = new frmTelaInicialContaTitular(userID);
+            frmtelainicialcontatitular.Show();
+            this.Hide();
         }
     }
 }

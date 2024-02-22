@@ -57,14 +57,14 @@ namespace ContaBancariaWindowsForms
 
                 Conexao.Close();
 
-                MessageBox.Show("Depósito realizado com sucesso!");
+                MessageBox.Show("Depósito realizado com sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 frmTelaInicialContaTitular frmtelainicialcontatitular = new frmTelaInicialContaTitular(userID);
                 frmtelainicialcontatitular.Show();
                 this.Hide();
             }
             catch
             {
-                MessageBox.Show("Houve um erro.");
+                MessageBox.Show("Houve um erro ao realizar o depósito.", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 frmTelaInicialContaTitular frmtelainicialcontatitular = new frmTelaInicialContaTitular(userID);
                 frmtelainicialcontatitular.Show();
                 this.Hide();
@@ -88,16 +88,25 @@ namespace ContaBancariaWindowsForms
 
             string obter_nome_titular = $"SELECT nome FROM titular WHERE id = '{userID}'";
 
-            MySqlCommand comando_obter_nome = new MySqlCommand(obter_nome_titular, Conexao);
+            try
+            {
+                MySqlCommand comando_obter_nome = new MySqlCommand(obter_nome_titular, Conexao);
 
+                Conexao.Open();
 
-            Conexao.Open();
+                string nome = comando_obter_nome.ExecuteScalar()?.ToString();
 
-            string nome = comando_obter_nome.ExecuteScalar()?.ToString();
+                lblNomeRealizarDepositoContaBancaria.Text = nome;
+            }
+            catch
+            {
+                MessageBox.Show("houve um erro ao conectar com o banco de dados. \n Contate o administrador", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            finally
+            {
+                Conexao.Close();
+            }
 
-            Conexao.Close();
-
-            lblNomeRealizarSaqueContaBancaria.Text = nome;
         }
     }
 }

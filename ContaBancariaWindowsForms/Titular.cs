@@ -136,8 +136,6 @@ namespace ContaBancariaWindowsForms
         {
             return $"UPDATE titular SET saldo = '{valor}' WHERE id = '{userID}'";
         }
-
-
         public string ObterNome(int userID)
         {
             return $"SELECT nome from titular where id = {userID}";

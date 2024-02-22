@@ -34,7 +34,7 @@
             this.txtQuantidadeRealizarSaqueContaBancaria = new System.Windows.Forms.TextBox();
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria = new System.Windows.Forms.Button();
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria = new System.Windows.Forms.Button();
-            this.lblNomeRealizarSaqueContaBancaria = new System.Windows.Forms.Label();
+            this.lblNomeRealizarDepositoContaBancaria = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -104,15 +104,15 @@
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.UseVisualStyleBackColor = false;
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.Click += new System.EventHandler(this.btnEncerrarRealizarDepositoTelaInicialContaBancaria_Click);
             // 
-            // lblNomeRealizarSaqueContaBancaria
+            // lblNomeRealizarDepositoContaBancaria
             // 
-            this.lblNomeRealizarSaqueContaBancaria.AutoSize = true;
-            this.lblNomeRealizarSaqueContaBancaria.Location = new System.Drawing.Point(382, 206);
-            this.lblNomeRealizarSaqueContaBancaria.Name = "lblNomeRealizarSaqueContaBancaria";
-            this.lblNomeRealizarSaqueContaBancaria.Size = new System.Drawing.Size(35, 13);
-            this.lblNomeRealizarSaqueContaBancaria.TabIndex = 24;
-            this.lblNomeRealizarSaqueContaBancaria.Text = "Nome";
-            this.lblNomeRealizarSaqueContaBancaria.Click += new System.EventHandler(this.lblNomeRealizarDepositoContaBancaria_Click);
+            this.lblNomeRealizarDepositoContaBancaria.AutoSize = true;
+            this.lblNomeRealizarDepositoContaBancaria.Location = new System.Drawing.Point(382, 206);
+            this.lblNomeRealizarDepositoContaBancaria.Name = "lblNomeRealizarDepositoContaBancaria";
+            this.lblNomeRealizarDepositoContaBancaria.Size = new System.Drawing.Size(35, 13);
+            this.lblNomeRealizarDepositoContaBancaria.TabIndex = 24;
+            this.lblNomeRealizarDepositoContaBancaria.Text = "Nome";
+            this.lblNomeRealizarDepositoContaBancaria.Click += new System.EventHandler(this.lblNomeRealizarDepositoContaBancaria_Click);
             // 
             // pictureBox1
             // 
@@ -131,7 +131,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblNomeRealizarSaqueContaBancaria);
+            this.Controls.Add(this.lblNomeRealizarDepositoContaBancaria);
             this.Controls.Add(this.btnEncerrarRealizarSaqueTelaInicialContaBancaria);
             this.Controls.Add(this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria);
             this.Controls.Add(this.txtQuantidadeRealizarSaqueContaBancaria);
@@ -155,7 +155,7 @@
         private System.Windows.Forms.TextBox txtQuantidadeRealizarSaqueContaBancaria;
         private System.Windows.Forms.Button btnLimparCampoRealizarDepositoTelaInicialContaBancaria;
         private System.Windows.Forms.Button btnEncerrarRealizarSaqueTelaInicialContaBancaria;
-        private System.Windows.Forms.Label lblNomeRealizarSaqueContaBancaria;
+        private System.Windows.Forms.Label lblNomeRealizarDepositoContaBancaria;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

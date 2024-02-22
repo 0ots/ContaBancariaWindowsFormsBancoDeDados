@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -31,9 +32,10 @@ namespace ContaBancariaWindowsForms
             LimparCamposErros();
 
             int erro = 0;
-
             bool isInteger = false;
+
             var nome = txtNomeCriarContaBancaria.Text;
+
             while (nome.Length < 3)
             {
                 lblErroNomeCriarContaBancaria.Visible = true;
@@ -96,34 +98,39 @@ namespace ContaBancariaWindowsForms
 
             if (erro == 0)
             {
+                MySqlConnection Conexao = new MySqlConnection("datasource=localhost;username=root;password=;database=contabancaria");
                 try
                 {
-                    MySqlConnection Conexao = new MySqlConnection("datasource=localhost;username=root;password=;database=contabancaria");
                     foreach (Titular t in titular)
                     {
-                        // Invoca o método MeuMetodo para cada objeto Titular na lista
                         string sql_code = t.InserirTitular();
                         MySqlCommand comando = new MySqlCommand(sql_code, Conexao);
                         Conexao.Open();
                         comando.ExecuteReader();
-                        MessageBox.Show("Titular inserido com sucesso!");
+                        MessageBox.Show("Conta criada com sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         LimparCamposCriarContaBancaria();
                         LimparCamposErros();
+                        VoltarTelaInicial();
                     }
                 }
                 catch
                 {
-                    MessageBox.Show("Houve um erro ao cadastrar o titular.");
+                    MessageBox.Show("Houve um erro ao cadastrar sua conta!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    Conexao.Close();
                 }
             }
         }
-        // Métodos
+
         public void VoltarTelaInicial()
         {
             frmTelaInicial telainicial = new frmTelaInicial();
             this.Hide();
             telainicial.Show();
         }
+
         private void LimparCamposCriarContaBancaria()
         {
             txtNomeCriarContaBancaria.Text = "";
@@ -132,6 +139,7 @@ namespace ContaBancariaWindowsForms
             txtTelefoneCriarContaBancaria.Text = "";
             txtCpfCriarContaBancaria.Text = "";
         }
+
         public void LimparCamposErros()
         {
             lblErroNomeCriarContaBancaria.Text = "";
@@ -140,5 +148,6 @@ namespace ContaBancariaWindowsForms
             lblErroTelefoneCriarContaBancaria.Text = "";
             lblErroCpfCriarContaBancaria.Text = "";
         }
+
     }
 }

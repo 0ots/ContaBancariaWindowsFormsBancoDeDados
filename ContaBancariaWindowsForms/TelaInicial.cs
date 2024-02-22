@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,20 @@ namespace ContaBancariaWindowsForms
         private void frmTelaInicial_Load(object sender, EventArgs e)
         {
 
+            MySqlConnection Conexao = new MySqlConnection("datasource=localhost;username=root;password=;database=contabancaria");
+            try
+            {
+                Conexao.Open();
+            }
+            catch
+            {
+                MessageBox.Show("Houve um erro ao conectar com o banco de dados. \nContate o administrador.", "Mensagem", MessageBoxButtons.OK);
+                this.Close();
+            }
+            finally
+            {
+                Conexao.Close();
+            }
         }
         private void btnAcessarContaContaBancaria_Click(object sender, EventArgs e)
         {

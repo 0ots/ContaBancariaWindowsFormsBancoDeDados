@@ -34,19 +34,15 @@ namespace ContaBancariaWindowsForms
 
                 Conexao.Open();
 
-                // Execute a consulta e obtenha o resultado
                 object result = comando.ExecuteScalar();
 
-                // Verifique se o resultado é nulo
                 if (result != null)
                 {
-                    // As credenciais são válidas, obtenha o ID e acesse a próxima tela
                     int userID = Convert.ToInt32(result);
                     AcessarTelaInicialContaBancaria(userID);
                 }
                 else
                 {
-                    // As credenciais são inválidas, exiba uma mensagem de erro
                     lblErroAutenticacaoAcessarContaBancaria.Visible = true;
                 }
             }
@@ -56,10 +52,10 @@ namespace ContaBancariaWindowsForms
             }
             finally
             {
-                // Certifique-se de fechar a conexão com o banco de dados, independentemente do resultado
                 Conexao.Close();
             }
         }
+
         private void btnLimparCamposAcessarContaBancaria_Click(object sender, EventArgs e)
         {
             LimparCamposAcessarContaBancaria();
@@ -68,7 +64,6 @@ namespace ContaBancariaWindowsForms
         {
             VoltarTelaInicialAcessarContaBancaria();
         }
-        // Métodos
         public void LimparCamposAcessarContaBancaria()
         {
             txtCpfAcessarContaBancaria.Text = "";
@@ -90,11 +85,6 @@ namespace ContaBancariaWindowsForms
             frmTelaInicialContaTitular frmtelainicialcontatitular = new frmTelaInicialContaTitular(userID);
             frmtelainicialcontatitular.Show();
             this.Hide();
-        }
-
-        private void frmTelaLogin_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
