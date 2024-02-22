@@ -42,25 +42,5 @@ namespace ContaBancariaWindowsForms
             frmtelalogin.Show();
             this.Hide();
         }
-
-        private void btnAcessarContaContaBancaria_MouseHover(object sender, EventArgs e)
-        {
-            btnAcessarContaContaBancaria.BackColor = Color.Gainsboro;
-        }
-
-        private void btnAcessarContaContaBancaria_MouseLeave(object sender, EventArgs e)
-        {
-            btnAcessarContaContaBancaria.BackColor = SystemColors.Window;
-        }
-
-        private void btnCriarContaContaBancaria_MouseHover(object sender, EventArgs e)
-        {
-            btnCriarContaContaBancaria.BackColor = Color.Gainsboro;
-        }
-
-        private void btnCriarContaContaBancaria_MouseLeave(object sender, EventArgs e)
-        {
-            btnCriarContaContaBancaria.BackColor = SystemColors.Window;
-        }
     }
 }

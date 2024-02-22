@@ -74,7 +74,9 @@
             // 
             this.btnRealizarDepositoTelaInicialContaBancaria.BackColor = System.Drawing.Color.GreenYellow;
             this.btnRealizarDepositoTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRealizarDepositoTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRealizarDepositoTelaInicialContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRealizarDepositoTelaInicialContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnRealizarDepositoTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRealizarDepositoTelaInicialContaBancaria.Location = new System.Drawing.Point(284, 278);
             this.btnRealizarDepositoTelaInicialContaBancaria.Name = "btnRealizarDepositoTelaInicialContaBancaria";
             this.btnRealizarDepositoTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
@@ -87,7 +89,9 @@
             // 
             this.btnRealizarSaqueTelaInicialContaBancaria.BackColor = System.Drawing.Color.DarkOrange;
             this.btnRealizarSaqueTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRealizarSaqueTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRealizarSaqueTelaInicialContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRealizarSaqueTelaInicialContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnRealizarSaqueTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRealizarSaqueTelaInicialContaBancaria.Location = new System.Drawing.Point(365, 278);
             this.btnRealizarSaqueTelaInicialContaBancaria.Name = "btnRealizarSaqueTelaInicialContaBancaria";
             this.btnRealizarSaqueTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
@@ -100,7 +104,9 @@
             // 
             this.btnEncerrarSecaoTelaInicialContaBancaria.BackColor = System.Drawing.Color.IndianRed;
             this.btnEncerrarSecaoTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEncerrarSecaoTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEncerrarSecaoTelaInicialContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEncerrarSecaoTelaInicialContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnEncerrarSecaoTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEncerrarSecaoTelaInicialContaBancaria.Location = new System.Drawing.Point(446, 278);
             this.btnEncerrarSecaoTelaInicialContaBancaria.Name = "btnEncerrarSecaoTelaInicialContaBancaria";
             this.btnEncerrarSecaoTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
@@ -132,18 +138,22 @@
             // 
             this.btnEditarTitularContaBancaria.BackColor = System.Drawing.Color.White;
             this.btnEditarTitularContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditarTitularContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditarTitularContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEditarTitularContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnEditarTitularContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarTitularContaBancaria.Location = new System.Drawing.Point(713, 19);
             this.btnEditarTitularContaBancaria.Name = "btnEditarTitularContaBancaria";
             this.btnEditarTitularContaBancaria.Size = new System.Drawing.Size(75, 48);
             this.btnEditarTitularContaBancaria.TabIndex = 20;
             this.btnEditarTitularContaBancaria.Text = "Editar dados";
             this.btnEditarTitularContaBancaria.UseVisualStyleBackColor = false;
+            this.btnEditarTitularContaBancaria.Click += new System.EventHandler(this.btnEditarTitularContaBancaria_Click);
             // 
             // frmTelaInicialContaTitular
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnEditarTitularContaBancaria);
             this.Controls.Add(this.label1);

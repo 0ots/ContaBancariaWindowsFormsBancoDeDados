@@ -70,8 +70,6 @@
             this.btnCriarContaContaBancaria.Text = "Criar Conta";
             this.btnCriarContaContaBancaria.UseVisualStyleBackColor = false;
             this.btnCriarContaContaBancaria.Click += new System.EventHandler(this.btnCriarContaContaBancaria_Click);
-            this.btnCriarContaContaBancaria.MouseLeave += new System.EventHandler(this.btnCriarContaContaBancaria_MouseLeave);
-            this.btnCriarContaContaBancaria.MouseHover += new System.EventHandler(this.btnCriarContaContaBancaria_MouseHover);
             // 
             // pictureBox1
             // 
@@ -98,8 +96,6 @@
             this.btnAcessarContaContaBancaria.Text = "Acessar Conta";
             this.btnAcessarContaContaBancaria.UseVisualStyleBackColor = false;
             this.btnAcessarContaContaBancaria.Click += new System.EventHandler(this.btnAcessarContaContaBancaria_Click);
-            this.btnAcessarContaContaBancaria.MouseLeave += new System.EventHandler(this.btnAcessarContaContaBancaria_MouseLeave);
-            this.btnAcessarContaContaBancaria.MouseHover += new System.EventHandler(this.btnAcessarContaContaBancaria_MouseHover);
             // 
             // frmTelaInicial
             // 

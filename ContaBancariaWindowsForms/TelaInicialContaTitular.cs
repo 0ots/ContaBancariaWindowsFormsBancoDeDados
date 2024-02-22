@@ -59,5 +59,12 @@ namespace ContaBancariaWindowsForms
             lblRetornarNomeTitularTelaInicialContaBancaria.Text = nome;
             lblRetornarSaldoTelaInicialContaBancaria.Text = saldo;
         }
+
+        private void btnEditarTitularContaBancaria_Click(object sender, EventArgs e)
+        {
+            frmTelaEditarDadosTitular frmtelaeditardadostitular = new frmTelaEditarDadosTitular(userID);
+            frmtelaeditardadostitular.Show();
+            this.Hide();
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace ContaBancariaWindowsForms
 {
@@ -128,12 +129,34 @@ namespace ContaBancariaWindowsForms
         // Método para realizar um depósito recebendo um valor como parâmetro
         public string RealizarDeposito(double valor, int userID)
         {
-            return $"UPDATE titular SET saldo = '{valor}' where id = '{userID}'";
+            return $"UPDATE titular SET saldo = '{valor}' WHERE id = '{userID}'";
         }
         // Método para realizar um saque recebendo um valor como parâmetro
         public string RealizarSaque(double valor, int userID)
         {
-            return $"UPDATE titular SET saldo = '{valor}' where id = '{userID}'";
+            return $"UPDATE titular SET saldo = '{valor}' WHERE id = '{userID}'";
+        }
+
+
+        public string ObterNome(int userID)
+        {
+            return $"SELECT nome from titular where id = {userID}";
+        }
+        public string ObterSenha(int userID)
+        {
+            return $"SELECT senha from titular where id = {userID}";
+        }
+        public string ObterEmail(int userID)
+        {
+            return $"SELECT email from titular where id = {userID}";
+        }
+        public string ObterTelefone(int userID)
+        {
+            return $"SELECT telefone from titular where id = {userID}";
+        }
+        public string AlterarDados(string nome, string senha, string email, string telefone, int userID)
+        {
+            return $"UPDATE titular SET nome = '{nome}', senha = '{senha}', email = '{email}', telefone = '{telefone}' WHERE id = '{userID}'";
         }
     }
 }

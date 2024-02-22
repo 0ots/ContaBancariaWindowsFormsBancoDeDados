@@ -140,15 +140,5 @@ namespace ContaBancariaWindowsForms
             lblErroTelefoneCriarContaBancaria.Text = "";
             lblErroCpfCriarContaBancaria.Text = "";
         }
-
-        private void btnCriarConta_MouseHover(object sender, EventArgs e)
-        {
-            btnCriarConta.BackColor = Color.DarkGreen;
-        }
-
-        private void btnCriarConta_MouseLeave(object sender, EventArgs e)
-        {
-            btnCriarConta.BackColor = Color.GreenYellow;
-        }
     }
 }

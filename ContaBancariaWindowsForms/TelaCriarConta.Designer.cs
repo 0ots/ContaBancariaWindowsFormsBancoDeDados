@@ -74,7 +74,7 @@
             // 
             // btnCriarConta
             // 
-            this.btnCriarConta.BackColor = System.Drawing.Color.GreenYellow;
+            this.btnCriarConta.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCriarConta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCriarConta.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCriarConta.FlatAppearance.BorderSize = 2;
@@ -87,12 +87,10 @@
             this.btnCriarConta.Text = "Criar";
             this.btnCriarConta.UseVisualStyleBackColor = false;
             this.btnCriarConta.Click += new System.EventHandler(this.btnCriarConta_Click);
-            this.btnCriarConta.MouseLeave += new System.EventHandler(this.btnCriarConta_MouseLeave);
-            this.btnCriarConta.MouseHover += new System.EventHandler(this.btnCriarConta_MouseHover);
             // 
             // btnLimparCamposContaBancaria
             // 
-            this.btnLimparCamposContaBancaria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLimparCamposContaBancaria.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLimparCamposContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimparCamposContaBancaria.FlatAppearance.BorderSize = 2;
             this.btnLimparCamposContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -173,7 +171,7 @@
             // 
             // btnVoltarTelaInicialCriarContaBancaria
             // 
-            this.btnVoltarTelaInicialCriarContaBancaria.BackColor = System.Drawing.Color.IndianRed;
+            this.btnVoltarTelaInicialCriarContaBancaria.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnVoltarTelaInicialCriarContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltarTelaInicialCriarContaBancaria.FlatAppearance.BorderSize = 2;
             this.btnVoltarTelaInicialCriarContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

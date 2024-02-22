@@ -43,6 +43,9 @@
             // 
             this.btnRealizarDepositoTelaInicialContaBancaria.BackColor = System.Drawing.Color.GreenYellow;
             this.btnRealizarDepositoTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRealizarDepositoTelaInicialContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRealizarDepositoTelaInicialContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnRealizarDepositoTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRealizarDepositoTelaInicialContaBancaria.Location = new System.Drawing.Point(286, 290);
             this.btnRealizarDepositoTelaInicialContaBancaria.Name = "btnRealizarDepositoTelaInicialContaBancaria";
             this.btnRealizarDepositoTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
@@ -75,6 +78,9 @@
             // 
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.Location = new System.Drawing.Point(367, 290);
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.Name = "btnLimparCampoRealizarDepositoTelaInicialContaBancaria";
             this.btnLimparCampoRealizarDepositoTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
@@ -87,6 +93,9 @@
             // 
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.BackColor = System.Drawing.Color.IndianRed;
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.FlatAppearance.BorderSize = 2;
+            this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.Location = new System.Drawing.Point(448, 290);
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.Name = "btnEncerrarRealizarSaqueTelaInicialContaBancaria";
             this.btnEncerrarRealizarSaqueTelaInicialContaBancaria.Size = new System.Drawing.Size(75, 48);
